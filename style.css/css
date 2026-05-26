@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background: #111;
+  font-family: sans-serif;
+}
+
+.gallery {
+  width: 90%;
+  max-width: 700px;
+
+  margin: 40px auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.4);
+
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.6);
+}
